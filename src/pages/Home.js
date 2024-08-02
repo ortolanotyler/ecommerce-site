@@ -8,9 +8,7 @@ const Home = () => {
     <>
       <HeroSection />  {/* Add the HeroSection component here */}
       <Container maxWidth="lg">
-        <Typography variant="h2" gutterBottom>
-          Featured Products
-        </Typography>
+        
         <FeaturedProducts />  {/* Render the FeaturedProducts component */}
       </Container>
     </>

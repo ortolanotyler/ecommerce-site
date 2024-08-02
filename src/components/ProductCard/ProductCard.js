@@ -1,6 +1,5 @@
-// src/components/ProductCard/ProductCard.js
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import styles from './ProductCard.module.css';
 
@@ -13,18 +12,19 @@ const ProductCard = ({ product }) => {
 
   return (
     <Card className={styles.card}>
-      <CardMedia
-        component="img"
-        height="200"
-        image={product.image}
-        alt={product.title}
-        className={styles.media}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
+      <Box className={styles.mediaContainer}>
+        <CardMedia
+          component="img"
+          image={product.image}
+          alt={product.title}
+          className={styles.media}
+        />
+      </Box>
+      <CardContent className={styles.content}>
+        <Typography gutterBottom variant="h6" component="div" className={styles.title}>
           {product.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary">
+        <Typography variant="body1" color="textPrimary" className={styles.price}>
           ${product.price.toFixed(2)}
         </Typography>
         <Button
@@ -32,6 +32,7 @@ const ProductCard = ({ product }) => {
           color="primary"
           onClick={handleViewDetails}
           className={styles.button}
+          fullWidth
         >
           View Details
         </Button>
@@ -41,5 +42,3 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
-
-

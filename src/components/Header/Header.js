@@ -119,7 +119,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" component={RouterLink} to="/" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit' }}>
-          MyStore
+          GOLF.store
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }}>
           <Search>

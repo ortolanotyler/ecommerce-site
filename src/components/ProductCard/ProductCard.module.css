@@ -1,16 +1,56 @@
-/* src/components/ProductCard/ProductCard.module.css */
 .card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
   }
   
+  .mediaContainer {
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
   .media {
-    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #1976d2;
+    margin-bottom: 16px;
   }
   
   .button {
-    margin-top: 10px;
+    padding: 10px;
+    background-color: #1976d2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    &:hover {
+      background-color: #155fa0;
+    }
   }
+  
