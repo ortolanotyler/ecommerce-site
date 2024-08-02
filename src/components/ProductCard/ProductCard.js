@@ -1,31 +1,45 @@
 // src/components/ProductCard/ProductCard.js
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography, Button } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/product/${product.id}`);
+  };
+
   return (
-    <Card>
+    <Card className={styles.card}>
       <CardMedia
         component="img"
-        alt={product.title}
-        height="140"
+        height="200"
         image={product.image}
-        title={product.title}
+        alt={product.title}
+        className={styles.media}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {product.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="textSecondary">
           ${product.price.toFixed(2)}
         </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleViewDetails}
+          className={styles.button}
+        >
+          View Details
+        </Button>
       </CardContent>
-      <Button variant="contained" color="primary" component={RouterLink} to={`/product/${product.id}`}>
-        View Details
-      </Button>
     </Card>
   );
 };
 
 export default ProductCard;
+
+

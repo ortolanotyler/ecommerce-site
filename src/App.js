@@ -18,6 +18,7 @@ const OrderHistory = lazy(() => import('./pages/OrderHistory'));
 const OrderDetail = lazy(() => import('./pages/OrderDetail'));
 const Wishlist = lazy(() => import('./pages/Wishlist'));
 const Profile = lazy(() => import('./pages/Profile'));
+const SearchResults = lazy(() => import('./pages/SearchResults'));
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/search" element={<SearchResults />} /> {/* Add this line */}
             </Routes>
           </Suspense>
         </main>
