@@ -1,10 +1,9 @@
-// src/theme.js
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Primary action color (e.g., buttons)
+      main: '#388E3C', // Changed to a golf green color
     },
     secondary: {
       main: '#ff4081', // Highlight or accent color

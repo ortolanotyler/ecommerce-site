@@ -10,7 +10,7 @@ const mockProducts = [
     },
     {
       id: 2,
-      title: 'Premium Golf Balls (12 Pack)',
+      title: ' Golf Balls',
       image: '/Images/balls.webp',
       price: 39.99,
       category: 'Golf Balls',

@@ -1,23 +1,19 @@
-// src/pages/Home.js
 import React from 'react';
-import { Grid, Container, Typography } from '@mui/material';
-import ProductCard from '../components/ProductCard/ProductCard';
-import mockProducts from '../data/mockProducts'; // Adjust the path based on your project structure
+import { Container, Typography } from '@mui/material';
+import HeroSection from '../components/HeroSection/HeroSection'; // Import the HeroSection component
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts'; // Import the FeaturedProducts component
 
 const Home = () => {
   return (
-    <Container maxWidth="lg">
-      <Typography variant="h1" gutterBottom>
-        Welcome to MyStore
-      </Typography>
-      <Grid container spacing={4}>
-        {mockProducts.map((product) => (
-          <Grid item xs={12} sm={6} md={4} key={product.id}>
-            <ProductCard product={product} />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <>
+      <HeroSection />  {/* Add the HeroSection component here */}
+      <Container maxWidth="lg">
+        <Typography variant="h2" gutterBottom>
+          Featured Products
+        </Typography>
+        <FeaturedProducts />  {/* Render the FeaturedProducts component */}
+      </Container>
+    </>
   );
 };
 
