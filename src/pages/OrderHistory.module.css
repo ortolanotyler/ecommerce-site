@@ -1,0 +1,33 @@
+/* src/pages/OrderHistory.module.css */
+.orderHistory {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .orderCard {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .orderCard h2 {
+    margin-bottom: 10px;
+  }
+  
+  .viewOrderButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .viewOrderButton:hover {
+    background-color: #0056b3;
+  }
+  

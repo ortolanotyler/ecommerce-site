@@ -1,0 +1,38 @@
+/* src/components/ProductDetail/ProductDetail.module.css */
+.productDetail {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .productImage {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details {
+    max-width: 600px;
+  }
+  
+  .productTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .productDescription {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .productPrice {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .addToCartButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  

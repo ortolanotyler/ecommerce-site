@@ -1,0 +1,115 @@
+/* src/pages/Shop.module.css */
+.shopContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .categoryButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .categoryButton.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .categoryButton:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .searchBar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .productList {
+    display: flex;
+    justify-content: center; /* Center align the product cards */
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .productCard {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productCard img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .productCard h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .productCard p {
+    margin-bottom: 15px;
+  }
+  
+  .productCard button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .productCard button:hover {
+    background-color: #0056b3;
+  }
+  /* src/pages/Shop.module.css */
+.shop {
+    padding: 20px;
+  }
+  
+  .filterContainer {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .categorySelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  

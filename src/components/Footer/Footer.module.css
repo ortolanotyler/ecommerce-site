@@ -1,0 +1,11 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Add margin to separate it from the content */
+  }
+  

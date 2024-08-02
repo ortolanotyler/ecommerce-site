@@ -1,0 +1,38 @@
+/* src/pages/Wishlist.module.css */
+.wishlist {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .wishlistItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .productImage {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .productDetails {
+    flex-grow: 1;
+  }
+  
+  .removeButton {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .removeButton:hover {
+    background-color: #ff1a1a;
+  }
+  
