@@ -1,12 +1,27 @@
 // src/components/Footer/Footer.js
 import React from 'react';
-import styles from './Footer.module.css';
+import { Container, Typography, Box, Link } from '@mui/material';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <p>&copy; 2024 MyStore. All rights reserved.</p>
-    </footer>
+    <Box sx={{ bgcolor: '#333', color: '#fff', py: 3, mt: 4 }}>
+      <Container maxWidth="lg">
+        <Typography variant="body1" align="center">
+          &copy; 2024 MyStore. All rights reserved.
+        </Typography>
+        <Box sx={{ mt: 2, textAlign: 'center' }}>
+          <Link href="#" color="inherit" sx={{ mx: 2 }}>
+            Privacy Policy
+          </Link>
+          <Link href="#" color="inherit" sx={{ mx: 2 }}>
+            Terms of Service
+          </Link>
+          <Link href="#" color="inherit" sx={{ mx: 2 }}>
+            Contact Us
+          </Link>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

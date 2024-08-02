@@ -1,12 +1,16 @@
+// src/pages/Home.js
 import React from 'react';
+import HeroSection from '../components/HeroSection/HeroSection';
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts';
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to MyStore</h1>
-      {/* Other content */}
+      <HeroSection />
+      <FeaturedProducts />
+      {/* Add more sections as needed */}
     </div>
   );
 };
 
-export default Home; // Ensure you have this line to export the component
+export default Home;

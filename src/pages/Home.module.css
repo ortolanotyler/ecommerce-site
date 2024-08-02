@@ -1,0 +1,14 @@
+/* src/pages/Home.module.css */
+.homePage {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .heroSection {
+    margin-bottom: 50px;
+  }
+  
+  .featuredProducts {
+    margin-bottom: 50px;
+  }
+  
