@@ -1,6 +1,8 @@
 /* src/pages/Checkout.module.css */
 .checkout {
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .orderSummary {
@@ -11,10 +13,12 @@
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
   }
   
   .orderItemImage {
     width: 100px;
+    border-radius: 8px;
   }
   
   .orderItemDetails {
@@ -27,10 +31,15 @@
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
+    text-align: right;
   }
   
   .shippingInfo, .paymentInfo {
     margin-bottom: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
   .formGroup {
@@ -41,19 +50,28 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #333;
   }
   
   input {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
   
-
-.confirmButton {
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .confirmButton {
     padding: 15px 30px;
     font-size: 18px;
-    background-color: #007bff; /* Change to a visible color */
+    background-color: #007bff; /* Primary color */
     color: white; /* Ensure text is visible */
     border: none;
     cursor: pointer;
@@ -61,11 +79,31 @@
     display: block;
     width: 100%;
     text-align: center;
-    border-radius: 5px; /* Optional: adds a slight roundness to the button */
+    border-radius: 5px; /* Slight roundness to the button */
   }
   
   .confirmButton:hover {
     background-color: #0056b3; /* Darken the color on hover */
   }
   
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .orderItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .orderItemImage {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  
+    .orderItemDetails {
+      align-items: flex-start;
+    }
+  
+    .total {
+      text-align: left;
+    }
+  }
   

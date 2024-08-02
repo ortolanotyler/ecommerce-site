@@ -1,6 +1,6 @@
-// src/components/FeaturedProducts/FeaturedProducts.js
 import React from 'react';
 import { Grid, Box, Typography, Button } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import ProductCard from '../ProductCard/ProductCard';
 import mockProducts from '../../data/mockProducts';
 import styles from './FeaturedProducts.module.css'; // Import the CSS module
@@ -21,7 +21,13 @@ const FeaturedProducts = () => {
         ))}
       </Grid>
       <Box className={styles.buttonContainer}>
-        <Button variant="contained" color="primary" size="large">
+        <Button 
+          variant="contained" 
+          color="primary" 
+          size="large"
+          component={RouterLink}
+          to="/shop"
+        >
           View All Products
         </Button>
       </Box>
@@ -30,3 +36,4 @@ const FeaturedProducts = () => {
 };
 
 export default FeaturedProducts;
+

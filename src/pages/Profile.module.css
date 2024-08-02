@@ -1,0 +1,47 @@
+/* src/pages/Profile.module.css */
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .textField {
+    margin-bottom: 20px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .editButton {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .profile {
+      padding: 15px;
+    }
+  
+    .textField {
+      margin-bottom: 15px;
+    }
+  
+    .buttonGroup {
+      flex-direction: column;
+    }
+  
+    .buttonGroup button {
+      margin-bottom: 10px;
+    }
+  }
+  

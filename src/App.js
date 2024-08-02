@@ -5,6 +5,7 @@ import { SnackbarProvider } from 'notistack';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Loading from './components/Loading/Loading';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const Home = lazy(() => import('./pages/Home'));
 const Shop = lazy(() => import('./pages/Shop'));
@@ -24,6 +25,7 @@ function App() {
   return (
     <SnackbarProvider maxSnack={3}>
       <Router>
+        <ScrollToTop /> {/* Add this component above the Router component */}
         <Header />
         <main>
           <Suspense fallback={<Loading />}>
