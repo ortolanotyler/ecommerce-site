@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
 
 const HeroSection = () => {
-  const heroImage = process.env.PUBLIC_URL + '/images/golf-course-hero.webp'; // Declare the image path
+  const heroImage = process.env.PUBLIC_URL + '/Images/golf-course-hero.webp'; // Declare the image path
 
   return (
     <Box
