@@ -18,10 +18,10 @@ const HeroSection = () => {
     >
       <Container maxWidth="lg">
         <Typography variant="h1" component="h1">
-          Discover the Best Golf Gear
+          GOLF.store
         </Typography>
         <Typography variant="h5" component="h2" style={{ marginTop: '20px' }}>
-          Everything you need to improve your game
+          Elevate your game
         </Typography>
       </Container>
     </Box>

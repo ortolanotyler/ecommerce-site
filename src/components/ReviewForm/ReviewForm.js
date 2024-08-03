@@ -1,4 +1,3 @@
-// src/components/ReviewForm/ReviewForm.js
 import React, { useState } from 'react';
 import styles from './ReviewForm.module.css';
 
@@ -9,7 +8,12 @@ const ReviewForm = ({ productId, addReview }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addReview(productId, { username, rating, comment });
+    const review = {
+      username,
+      rating,
+      comment
+    };
+    addReview(review);  // Passing the review object correctly
     setUsername('');
     setRating(0);
     setComment('');

@@ -1,4 +1,3 @@
-// src/components/Cart/Cart.js
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CartContext from '../../context/CartContext';
@@ -24,7 +23,7 @@ const Cart = () => {
               <img src={item.image} alt={item.title} className={styles.cartItemImage} />
               <div className={styles.cartItemDetails}>
                 <h2>{item.title}</h2>
-                <p>Price: ${item.price}</p>
+                <p>Price: ${item.price.toFixed(2)}</p>
                 <div className={styles.quantityControls}>
                   <button onClick={() => decreaseQuantity(item.id)}>-</button>
                   <span>{item.quantity}</span>
