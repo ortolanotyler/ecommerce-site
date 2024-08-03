@@ -1,0 +1,14 @@
+.searchResults {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .noResults {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
