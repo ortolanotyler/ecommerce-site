@@ -1,52 +1,66 @@
-/* src/components/FeaturedProducts/FeaturedProducts.module.css */
 .featuredProducts {
-    padding: 20px;
-    background-color: #2E7D32;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  .heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: white;
-    text-align: center;
-  }
-  
+  background-color: #e8f5e9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ensure cards are wide enough */
+  gap: 30px;
+  justify-content: center;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttonContainer .MuiButton-root {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonContainer .MuiButton-root:hover {
+  background-color: #2e7d32;
+}
+
+@media (max-width: 1024px) {
   .productGrid {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min width for smaller screens */
     gap: 20px;
   }
-  
-  .productCard {
-    flex: 1 1 calc(100% / 1 - 20px); /* Full width on small screens */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Further adjust min width for small screens */
+    gap: 20px;
   }
-  
-  @media (min-width: 600px) {
-    .productCard {
-      flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
-    }
+}
+
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
-  
-  @media (min-width: 960px) {
-    .productCard {
-      flex: 1 1 calc(25% - 20px); /* Four cards per row on large screens */
-    }
-  }
-  
-  .productCard:hover {
-    transform: translateY(-5px);
-  }
-  
-  .buttonContainer {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
+}

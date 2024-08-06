@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
@@ -11,32 +10,29 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <Card className={styles.card}>
-      <Box className={styles.mediaContainer}>
-        <CardMedia
-          component="img"
-          image={product.image}
-          alt={product.title}
-          className={styles.media}
-        />
-      </Box>
-      <CardContent className={styles.content}>
-        <Typography gutterBottom variant="h6" component="div" className={styles.title}>
+    <Card sx={{ maxWidth: 345, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <CardMedia
+        component="img"
+        height="200"
+        image={product.image}
+        alt={product.title}
+      />
+      <CardContent sx={{ flexGrow: 1 }}>
+        <Typography gutterBottom variant="h6" component="div">
           {product.title}
         </Typography>
-        <Typography variant="body1" color="textPrimary" className={styles.price}>
+        <Typography variant="body2" color="textSecondary">
           ${product.price.toFixed(2)}
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={handleViewDetails}
-          className={styles.button}
-          fullWidth
-        >
-          View Details
-        </Button>
       </CardContent>
+      <Button 
+        variant="contained" 
+        color="primary" 
+        onClick={handleViewDetails} 
+        sx={{ width: '100%', borderRadius: 0 }}
+      >
+        View Details
+      </Button>
     </Card>
   );
 };
