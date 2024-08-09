@@ -9,17 +9,7 @@ const Footer = () => {
         <Typography variant="body1" align="center">
           &copy; 2024 GOLF.store. All rights reserved.
         </Typography>
-        <Box sx={{ mt: 2, textAlign: 'center' }}>
-          <Link href="#" color="inherit" sx={{ mx: 2 }}>
-            Privacy Policy
-          </Link>
-          <Link href="#" color="inherit" sx={{ mx: 2 }}>
-            Terms of Service
-          </Link>
-          <Link href="#" color="inherit" sx={{ mx: 2 }}>
-            Contact Us
-          </Link>
-        </Box>
+        
       </Container>
     </Box>
   );
