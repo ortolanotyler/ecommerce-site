@@ -1,45 +1,86 @@
 /* src/components/Header/Header.module.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .link {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  .userName {
-    margin-right: 20px;
-    font-size: 16px;
-  }
-  
-  .logoutButton {
-    padding: 10px 15px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .logoutButton:hover {
-    background-color: #ff1a1a;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #388E3C; /* Darker background for a sleeker look */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.logo {
+  font-size: 28px; /* Slightly larger for emphasis */
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white; /* Accent color for the logo */
+}
+
+.nav {
+  display: flex;
+  gap: 35px;
+}
+
+.link {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.link:hover {
+  color: white; /* Accent color on hover */
+}
+
+.userName {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.logoutButton {
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.logoutButton:hover {
+  background-color: #ff1a1a;
+}
+
+.searchContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 400px; /* Restrict max width for better alignment */
+}
+
+.searchIcon {
+  cursor: pointer;
+  color: white;
+}
+
+.drawerContent {
+  background-color: #0a0a0a;
+  height: 100%;
+  color: white;
+}
+
+.drawerList {
+  padding: 20px;
+}
+
+.drawerListItem {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.drawerListItem:hover {
+  color: #ff8c00;
+}
